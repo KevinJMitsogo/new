@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Interview Task</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style_windows.css">
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['France', 4],
+          ['Italy', 4],
+          ['Japan', 2],
+          ['Canada', 1],
+        ]);
+
+        var options = {
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+</head>
+<body>
+    <div class="vessel">
+        <div class="sidebar" id="sb">
+            <div class="s0">
+                <img src="images/dashboard/logo.svg" alt="Logo">
+            </div>
+            <div class="s1 s">
+                <img src="images/Dashboard/icon_home.svg" alt="home">
+                <p>Home</p>
+            </div>
+            <div class="s2 s">
+                <img src="images/Dashboard/icon_dashboard.svg" alt="dashboard">
+                <p>Dashboard</p>
+            </div>
+            <div class="s3 s">
+                <img src="images/Dashboard/icon_inbox.svg" alt="inbox">
+                <p>Inbox</p>
+                <button>New</button>
+            </div>
+            <div class="s4 s">
+                <img src="images/Dashboard/icon_products.svg" alt="products">
+                <p>Products</p>
+            </div>
+            <div class="s5 s">
+                <img src="images/Dashboard/icon_admin.svg" alt="admin">
+                <p>Admin</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="mainbar" id="mb">
+              <div id="nav" class="nav">
+                  <div class="navleft">
+                    <ul>
+                        <li><span onclick="ToggleSideWindows()"><img src="images/menu.svg" alt="menu icon"></span></li>
+                        <li><img src="images/icon_search.svg" alt="search icon"></li>
+                        <li><p>Search transactions, invoices or help</p></li>
+                    </ul>
+                  </div>
+                  <div class="navright">
+                      
+                      <ul>
+                        <li><button class="bell"><img src="images/notification.svg" alt="bell icon">
+                            <div class="drop2">
+                                <div class="jamesdrop"> 
+                                    <img src="images/Dashboard-notifications/profile-pic.png" alt="Profile pic">
+                                    <h6>Drew James</h6>
+                                    <div class="number"><p>United States</p>
+                                    <p>2 mins ago</p></div>
+                                    </div>
+                                <div class="baviddrop"><img src="images/Dashboard-notifications/profile-pic-1.png" alt="Profile pic 1">
+                                    <h6>Bavid Kames</h6>
+                                    <div class="number"><p>United States</p>
+                                    <p>5 mins ago</p></div>
+            
+                                </div>
+                                <div class="laviddrop"><img src="images/Dashboard-notifications/profile-pic-2.png" alt="Profile pic 2">
+                                    <h6>Lavid Emes</h6>
+                                    <div class="number"><p>United States</p>
+                                    <p>10 mins ago</p></div>
+                                </div>
+                                
+                          </div>
+                        </button></li>
+                        <li><p>John Doe</p><button class="smalldown"><img class="rotate" src="images/small-down.svg" alt="small-down">
+                            <div class="drop1">
+                                <div class="profile"> <p>Profile</p></div>
+                                <div class="billing"> <p>Billing</p></div>
+                                <div class="logout">  <p>logout</p></div>
+                                
+                          </div>
+                        </button></li>                       
+                        <li><button class="smalldown"><img  src="images/Avatar/Avatar.png" alt="small avatar">
+                            <div class="drop1">
+                                <div class="profile"> <p>Profile</p></div>
+                                <div class="billing"> <p>Billing</p></div>
+                                <div class="logout">  <p>logout</p></div>
+                                
+                          </div>
+                        </button></li>
+                      </ul>
+                      
+                  </div>
+              </div>
+              <div class="mobnav">
+                <ul>
+                    <li><a href="#"><span onclick="ToggleSideWindows()"><img src="images/menu.svg" alt="menu icon" class="spanimg"></span></a></li>
+                    <li><img src="images/icon_search.svg" alt="search icon" class="searchicon"></li>
+                    <li><button class="bell"><img src="images/notification.svg" alt="bell icon">
+                        <div class="drop2">
+                            <div class="jamesdrop"> 
+                                <img src="images/Dashboard-notifications/profile-pic.png" alt="Profile pic">
+                                <h6>Drew James</h6>
+                                <div class="number"><p>United States</p>
+                                <p>2 mins ago</p></div>
+                                </div>
+                            <div class="baviddrop"><img src="images/Dashboard-notifications/profile-pic-1.png" alt="Profile pic 1">
+                                <h6>Bavid Kames</h6>
+                                <div class="number"><p>United States</p>
+                                <p>5 mins ago</p></div>
+        
+                            </div>
+                            <div class="laviddrop"><img src="images/Dashboard-notifications/profile-pic-2.png" alt="Profile pic 2">
+                                <h6>Lavid Emes</h6>
+                                <div class="number"><p>United States</p>
+                                <p>10 mins ago</p></div>
+                            </div>
+                    </div>
+                    </button></li>
+
+                    <li><button class="smalldown"><img  src="images/Avatar/Avatar.png" alt="small avatar">
+                        <div class="drop1">
+                            <div class="profile"> <p>Profile</p></div>
+                            <div class="billing"> <p>Billing</p></div>
+                            <div class="logout">  <p>logout</p></div>
+                    </div>
+                    </button></li>
+
+                </ul>
+
+
+              </div>
+
+            <div  id="content" class="content">
+                <div class="m1">
+                    <h1>Overview</h1>
+                    <button>
+                        <p>Add Funds </p><img src="images/plus.svg" alt="plus icon" class="plusicon">
+                    </button>
+                </div>
+
+                <div id="b1" class="ourusers">
+                    <div class="ourusersup">
+                        <img  class="avatarBig" src="images/Avatar/Avatar@2x.png"  alt="Avatar Large">
+                        <h3>Nick Herasimenka</h3>
+                        <p>United States</p>
+                        <img src="images/twitter.svg" alt="tw">
+                        <img src="images/facebook.svg" alt="fb">
+                        <img src="images/linkedin.svg" alt="li">
+                        <img src="images/whatsapp.svg" alt="wh">
+                    </div>
+                    <div style ="display: flex; justify-content: space-between; margin-left: 4.27%; margin-right: 4.27%; height: 25px; margin-top: 20px;" class="pv"><p style ="display: inline; font-size: 18px;" >Our Users</p> <img src="images/options.svg"> </div>
+                    <div class="james"> 
+                        <img src="images/Dashboard-notifications/profile-pic.png" alt="Profile pic">
+                        <h6>Drew James</h6>
+                        <div class="number"><p>United States</p>
+                        <p>8715674877</p></div>
+                        </div>
+                    <div class="bavid"><img src="images/Dashboard-notifications/profile-pic-1.png" alt="Profile pic 1">
+                        <h6>Bavid Kames</h6>
+                        <div class="number"><p>United States</p>
+                        <p>8715674877</p></div>
+
+                    </div>
+                    <div class="lavid"><img src="images/Dashboard-notifications/profile-pic-2.png" alt="Profile pic 2">
+                        <h6>Lavid Emes</h6>
+                        <div class="number"><p>United States</p>
+                        <p>8715674877</p></div>
+                    </div>
+                </div>
+                <div id="b2" class="statistics"> 
+                    <div style ="display: flex; justify-content: space-between; margin-left: 4.27%; margin-right: 4.27%; height: 25px; margin-top: 18px;" class="pv"><p style ="display: inline; font-size: 18px;" >Statistics</p> <p style ="display: inline; font-size: 14px;" >Last 6 months &nbsp; &nbsp;<img src="images/small-down.svg"></p> </div>
+                    <div class="salesup">
+                    <div id="curve_chart" style="width: 100%; height: 100%; position:relative;"></div>    
+                    </div>
+                
+                </div>
+                <div id="b3" class="sales">
+                    <div style ="margin-left: 4.27%; margin-right: 4.27%;  height: 25px; margin-top: 18px;" class="pv"><p style ="display: inline; font-size: 18px;" >Sales Distribution</p> </div>
+
+                    <div class="salesup">
+                        <div id="donutchart" style="width: 100%; height: 100%;"></div>
+                    </div>
+            
+                </div>
+                <div id="b4" class="referrer">
+                    <div style ="margin-left: 1.2%; margin-bottom: 1.6%; height: 25px; margin-top: 18px;" class="pv"><p style ="display: inline; font-size: 18px;">Referrer</p> </div>
+
+                    <table>
+                        <tr class="r1">
+                          <th>Location</th>
+                          <th>Views</th>
+                          <th>Sales</th>
+                          <th>Conversion</th>
+                          <th>Total</th>
+                        </tr>
+                        <tr>
+                          <td>google.com</td>
+                          <td>3746</td>
+                          <td>752</td>
+                          <td>43%</td>
+                          <td>$19,291</td>
+                        </tr>
+                        <tr>
+                          <td>facebook.com</td>
+                          <td>3746</td>
+                          <td>752</td>
+                          <td>43%</td>
+                          <td>$19,291</td>
+                        </tr>
+                        <tr>
+                          <td>twitter.com</td>
+                          <td>3746</td>
+                          <td>752</td>
+                          <td>43%</td>
+                          <td>$19,291</td>
+                        </tr>
+                        <tr>
+                          <td>Direct, email, IM</td>
+                          <td>3746</td>
+                          <td>752</td>
+                          <td>43%</td>
+                          <td>$19,291</td>
+                        </tr>
+                        <tr>
+                          <td>linkedin.com</td>
+                          <td>3746</td>
+                          <td>752</td>
+                          <td>43%</td>
+                          <td>$19,291</td>
+                        </tr>
+                        <tr>
+                          <td>instagram.com</td>
+                          <td>3746</td>
+                          <td>752</td>
+                          <td>43%</td>
+                          <td>$19,291</td>
+                        </tr>
+                      </table>
+
+                      <a href="#">Show More</a>
+                      
+                     
+
+
+
+
+
+
+
+
+
+                </div>
+                <div id="b5" class="video">
+                    <div style ="display: flex; justify-content: space-between; margin-left: 4.27%; margin-right: 4.27%;"><p style ="display: inline; font-size: 18px;" >Product Video</p> <img src="images/options.svg"> </div>
+                    <iframe width="91.5%" height="72.3%" src="https://www.youtube.com/embed/bC6_FMqX_Y8" title="Hexnode Kiosk Lockdown solution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe></div> 
+                     
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script src="javas.js"></script>
+
+    
+
+</body>
+</html>
+
