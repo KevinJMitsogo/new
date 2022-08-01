@@ -1,0 +1,165 @@
+
+@media (max-width: 500px){
+
+    body{
+        margin: 0;
+    }
+    
+    .vessel{
+        height: 2499px;
+        width: 100%;
+        display: flex;
+        background-color: coral;
+    }
+    
+    .sidebar{
+        width: 0%;
+        background-color: black;
+        transition: 2s;
+        height: 100%;
+    }
+    
+    .s0{
+        height: 5.819%;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 6.8%;
+    }
+    
+    .s1, .s2, .s3, .s4, .s5 {
+        height: 4.603%;
+        width: 100%;
+        color: #FFFFFF;
+        box-sizing: border-box;
+        padding-left: 6.8%;
+        font-family: Source Sans Pro, Regular;
+        font-size: 16px;
+        display: flex;
+        margin-bottom: 6px;
+        align-items: center;
+    }
+    
+    .s1 img, .s2 img, .s3 img, .s4 img, .s5 img {
+        height: 24px;
+        width: 24px;
+        box-sizing: border-box;
+    
+    }
+    
+    .s1 p, .s2 p, .s3 p, .s4 p, .s5 p {
+        height: 20px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-top: 2px;
+    }
+    
+    .s0, .s2{
+        background-color: #3C3B54;
+    }
+    
+    .s3 button{
+        height: 16px;
+        width:38px;
+        font-family:Source Sans Pro, Regular;
+        font-size: 10px;
+        background-color: #FF4A33;
+        border-radius: 66px;
+        margin-left: 46.9%;
+    }
+    
+    .s:hover {
+        background-color: #3C3B54;
+    }
+    
+    .mainbar{
+        width: 100%;
+        height:100%;
+        background-color: chartreuse;
+        transition: 2s;
+    }
+    
+    .navbar{
+        background-color: crimson;
+        width: 100%;
+        height: 2.801%;
+    }
+    
+    .content{
+        width: 95.833%;
+        height:97.199%;
+        /* height: 100%; */
+        background-color: darkmagenta;
+        /* position: relative; */
+        position: static;
+
+        margin: 0 auto;
+    }
+
+    .titlebar{
+        background-color: cornflowerblue;
+        width: 100%;
+        height: 3.54%;
+    }
+    
+    .ourusers{
+        background-color: darkgray;
+        width: 100%;
+        height: 24.207%;
+        position: static;
+        /* position: absolute; */
+        /* top: 78px; */
+        /* right: 0; */
+        margin-bottom: 25px;
+    }
+    
+    .statistics{
+        background-color: darkgray;
+        width: 100%;
+        height: 18.238%;
+        position: static;
+
+        /* position: absolute; */
+        /* top: 78px; */
+        /* left: 0; */
+        margin-bottom: 25px;
+    }
+    
+    .sales{
+        background-color: darkgray;
+        width:100%;
+        height: 18.238%;
+        position: static;
+
+        /* position: absolute; */
+        /* top: 78px; */
+        /* left: 34.02%; */
+        margin-bottom: 25px;
+    
+    }
+    
+    .referrer{
+        background-color: darkgray;
+        width: 100%;
+        height: 20.09%;
+        position: static;
+
+        /* position: absolute; */
+        /* top: 561px; */
+        /* left: 0; */
+        margin-bottom: 25px;
+    
+    }
+    
+    .video{
+        background-color: darkgray;
+        width: 100%;
+        height: 10.5804%;
+        position: static;
+
+        /* position: absolute; */
+        /* top: 706px; */
+        /* right: 0; */
+        margin-bottom: 25px;
+    }
+    
+}

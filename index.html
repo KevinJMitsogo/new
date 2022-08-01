@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet"  href="Style.css"/>
+</head>
+<body>
+    <div class="vessel">
+        <div class="sidebar" id="sb">
+            <div class="s0">
+                <img src="images/dashboard/logo.svg" alt="Logo">
+            </div>
+            <div class="s1 s">
+                <img src="images/Dashboard/icon_home.svg" alt="home">
+                <p>Home</p>
+            </div>
+            <div class="s2 s">
+                <img src="images/Dashboard/icon_dashboard.svg" alt="dashboard">
+                <p>Dashboard</p>
+            </div>
+            <div class="s3 s">
+                <img src="images/Dashboard/icon_inbox.svg" alt="inbox">
+                <p>Inbox</p>
+                <button>New</button>
+            </div>
+            <div class="s4 s">
+                <img src="images/Dashboard/icon_products.svg" alt="products">
+                <p>Products</p>
+            </div>
+            <div class="s5 s">
+                <img src="images/Dashboard/icon_admin.svg" alt="admin">
+                <p>Admin</p>
+            </div>
+        </div>
+        <div class="mainbar" id="mb">
+            <div class="navbar">
+                <div class="navleft" id="nl">
+                    <div class="burger">
+                    <span onclick="ToggleSideWindows()"><img src="images/menu.svg" alt="menu icon"></span>
+                    </div>
+                    <div class="search" id="search">
+                    <img src="images/icon_search.svg" alt="search icon">
+                    </div>
+                    <div class="line">
+                    <p>Search transactions, invoices or help</p>
+                    </div>
+                </div>
+                <div class="navright" id="nr">
+                    <div class="search1" id="search1">
+                        <img src="images/icon_search.svg" alt="search icon">
+                    </div>
+                    <div class="bell">
+                    <div class="dot"></div>
+                        <a href="#"><img src="images/notification.svg" alt="notification"></a>
+                        <div class="drop2">
+                            <div class="kames"> 
+                                    <img src="images/Dashboard-notifications/profile-pic.png" alt="profile-pic">
+                                    <div class="drop2name">
+                                        <h5> Bavid Kames</h5>
+                                        <h6>Assigned you on the call with Sara</h6>
+                                    </div>
+                                     <h6>2 mins ago</h6>
+                            </div>
+                            <div class="marry"> 
+                                <img src="images/Dashboard-notifications/profile-pic-1.png" alt="profile-pic-1">
+                                <div class="drop2name">
+                                    <h5> Bavid Kames</h5>
+                                    <h6>Assigned you on the call with Sara</h6>
+                                </div>
+                                 <h6>2 mins ago</h6>
+                            </div>
+                            <div class="maria"> 
+                                <img src="images/Dashboard-notifications/profile-pic-2.png" alt="profile-pic-2">
+                                <div class="drop2name">
+                                    <h5> Bavid Kames</h5>
+                                    <h6>Assigned you on the call with Sara</h6>
+                                </div>
+                                 <h6>2 mins ago</h6>
+                            </div>
+                            <div class="show">
+                                <a href="#">Show More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name smalldown">
+                        <p>John Doe</p>
+                        <div class="drop1 d11">
+                            <div class="profile"> <p>Profile</p></div>
+                            <div class="billing"> <p>Billing</p></div>
+                            <div class="logout">  <p>logout</p></div>
+                        </div>
+                    </div>
+                    <div class="arrow  smalldown">
+                        <img class="rotate" src="images/small-down.svg" alt="small-down">
+                        <div class="drop1 d12">
+                            <div class="profile"> <p>Profile</p></div>
+                            <div class="billing"> <p>Billing</p></div>
+                            <div class="logout">  <p>logout</p></div>
+                        </div>
+                    </div>
+                    <div class="avat smalldown" >
+                        <img src="images/Avatar/Avatar.png" alt="avatar">
+                        <div class="drop1 d13">
+                            <div class="profile"> <p>Profile</p></div>
+                            <div class="billing"> <p>Billing</p></div>
+                            <div class="logout">  <p>logout</p></div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="content" id="cnt">
+                <div class="titlebar">
+                    <h1>Overview</h1>
+                    <button>
+                        <p>Add Funds </p> <div class="plus"><img src="images/plus.svg" alt="plus icon" class="plusicon"></div> 
+                    </button>
+                </div>
+                <div class="ourusers">
+                    <div class="ourusersup">
+                        <div class="nick"><img  class="avatarBig" src="images/Avatar/Avatar@2x.png"  alt="Avatar Large"><div class="edit"><img src="images/edit.svg" alt=""></div></div>
+                        <h3>Nick Herasimenka</h3>
+                        <p>United States</p>
+                        <img src="images/twitter.svg" alt="tw">
+                        <img src="images/facebook.svg" alt="fb">
+                        <img src="images/linkedin.svg" alt="li">
+                        <img src="images/whatsapp.svg" alt="wh">
+                    </div>
+                    <div class="james">
+                        <img src="images/ourusers/profile-pic.png" alt="profile-pic">
+                        <div class="ourname">
+                            <h5> Drew James</h5>
+                            <h6>United States</h6>
+                        </div>
+                        <div class="number">Mobile:8715674877</div>
+                    </div>
+                    <div class="bavid">
+                        <img src="images/ourusers/profile-pic-1.png" alt="profile-pic-1">
+                        <div class="ourname">
+                            <h5> Bavid Kames</h5>
+                            <h6>United States</h6>
+                        </div>
+                        <div class="number">Mobile:8715674877</div>
+                    </div>
+                    <div class="lavid">
+                        <img src="images/ourusers/profile-pic-2.png" alt="profile-pic-2">
+                        <div class="ourname">
+                            <h5>Lavid Emes</h5>
+                            <h6>United States</h6>
+                        </div>
+                        <div class="number">Mobile:8715674877</div>
+                    </div>
+                </div>
+                <div class="statistics">
+                    <div style ="display: flex; justify-content: space-between; margin-left: 4.27%; margin-right: 4.27%; height: 25px; margin-top: 20px;" ><p style ="display: inline; font-size: 18px;" class="pv" >Statistics</p> <div><p style ="display: inline; font-size: 14px;" >Last 6 months &nbsp; &nbsp;<img src="images/small-down.svg"></p></div></div> 
+                    <div class="graph">
+                    <canvas id="line-chart" style="width:100%; height:100%"></canvas>
+                    </div>
+                </div>
+                <div class="sales">
+                    <div style ="display: flex; justify-content: space-between; margin-left: 4.27%; margin-right: 4.27%; height: 25px; margin-top: 20px;" ><p style ="display: inline; font-size: 18px;" class="pv" >Sales Distribution</p> <img src="images/options.svg"> </div>
+                    <div class="donut">
+                    <canvas id="doughnut-chart" style="width:100%; height:100%"></canvas>
+                    </div>
+                </div>
+                <div class="referrer">
+                    <div style ="margin-left: 1.2%; margin-bottom: 1.6%; height: 25px; margin-top: 18px;" ><p style ="display: inline; font-size: 18px;" class="pv">Referrer</p> </div>
+
+                    <table>
+                        <tr class="r1">
+                          <th>Location</th>
+                          <th>Views</th>
+                          <th>Sales</th>
+                          <th>Conversion</th>
+                          <th>Total</th>
+                        </tr>
+                        <tr>
+                          <td>google.com</td>
+                          <td>3746</td>
+                          <td>752</td>
+                          <td>43%</td>
+                          <td>$19,291</td>
+                        </tr>
+                        <tr>
+                          <td>facebook.com</td>
+                          <td>8126</td>
+                          <td>728</td>
+                          <td>32%</td>
+                          <td>$17,638</td>
+                        </tr>
+                        <tr>
+                          <td>twitter.com</td>
+                          <td>8836</td>
+                          <td>694</td>
+                          <td>28%</td>
+                          <td>$19,291</td>
+                        </tr>
+                        <tr>
+                          <td>Direct, email, IM</td>
+                          <td>1173</td>
+                          <td>645</td>
+                          <td>24%</td>
+                          <td>$14,421</td>
+                        </tr>
+                        <tr>
+                          <td>linkedin.com</td>
+                          <td>2739</td>
+                          <td>539</td>
+                          <td>20%</td>
+                          <td>$12,370</td>
+                        </tr>
+                        <tr>
+                          <td>instagram.com</td>
+                          <td>2739</td>
+                          <td>539</td>
+                          <td>20%</td>
+                          <td>$12,370</td>
+                        </tr>
+                      </table>
+                      <a href="#">Show More</a>
+                </div>
+                <div class="video">
+                    <div style ="display: flex; justify-content: space-between; margin-left: 4.27%; margin-right: 4.27%;"><p style ="display: inline; font-size: 18px; padding: 10px 0px" >Product Video</p> <img src="images/options.svg"> </div>
+                    <iframe class="youtube"  src="https://www.youtube.com/embed/bC6_FMqX_Y8" title="Hexnode Kiosk Lockdown solution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                </div> 
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="Style.js"></script>
+</body>
+</html>

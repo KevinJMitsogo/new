@@ -1,0 +1,610 @@
+body{
+    margin: 0;
+}
+.pv, .navbar p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+h5, h6{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.vessel{
+    height: 1203px;
+    width: 100%;
+    display: flex;
+    background-color: #43425D;
+}
+.sidebar{
+    width: 0%;
+    background-color:#43425D;
+    transition: 0.5s;
+    height: 100%;
+}
+.s0{
+    height: 5.819%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 6.8%;
+}
+.s1, .s2, .s3, .s4, .s5 {
+    height: 4.603%;
+    width: 100%;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 6.8%;
+    font-family: Source Sans Pro, Regular;
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 6px;
+    align-items: center;
+}
+.s1 img, .s2 img, .s3 img, .s4 img, .s5 img {
+    height: 24px;
+    width: 24px;
+    box-sizing: border-box;
+}
+.s1 p, .s2 p, .s3 p, .s4 p, .s5 p {
+    height: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+.s0, .s2{
+    background-color: #3C3B54;
+}
+.s3 button{
+    height: 16px;
+    width:38px;
+    font-family:Source Sans Pro, Regular;
+    font-size: 10px;
+    background-color: #FF4A33;
+    border-radius: 66px;
+    margin-left: 40%;
+}
+.s:hover {
+    background-color: #3C3B54;
+}
+.mainbar{
+    background-color: #F0F0F7;
+    width: 100%;
+    height:100%;
+    transition: 0.5s;
+    border-radius: 25px 0 0 0;
+}
+.navbar{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 5.819%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.burger, .search, .line, .bell, .name, .arrow, .avat{
+    background-color: #FFFFFF;
+    display: inline-block;
+}
+.navleft{
+    flex:1;
+    text-align: left;
+    height: 30px;
+}
+.navright{
+    flex:1;
+    text-align: right;
+    height: 30px;
+}
+.burger{
+    margin-left: 4%;
+}
+.search{
+    margin-left: 2%;
+}
+.dot{
+    height: 7px;
+    width: 7px;
+    border-radius: 7px;
+    position: relative;
+    background-color: #81E37A;
+    left: 50%;
+    top: 8px;
+    display: none;
+}
+.search1{
+    margin-right: 2%;
+    display: none;
+}
+.line{
+    margin-left: 1%;
+    position: relative;
+    bottom: 22%;
+}
+.bell{
+    margin-right: 2%;
+}
+.drop2{
+    position: absolute;
+    background-color:#FFFFFF;
+    z-index: 1;
+    border-radius: 10px;
+    right: 8%;
+    width: 430px;
+    top: 100%;
+    display: none;
+    padding: 5px;
+    box-shadow: 2px 2px rgb(167, 167, 167);
+}
+.drop2name{
+    text-align: left;
+    margin-left: -15%;
+    color: #43425D;
+}
+.drop2name h5{
+    font-family: Source Sans Pro, Semibold;
+    font-size: 16px;
+    margin-left: 35px;
+}
+.drop2name h6, .kames h6, .marry h6, .maria h6{
+    font-family: Source Sans Pro, Regular;
+    font-size: 14px;
+    opacity: 50%;
+    margin-left: 35px;
+}
+.kames img, .marry img, .maria img{
+    width: 46px;
+    height: 46px;
+}
+.kames, .marry, .maria{
+    width: 100%;
+    min-height: 76px;
+    display: flex;
+    justify-content: space-around;
+}
+.show{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+.bell:hover .drop2{
+    display: block;
+}
+.bell:hover .dot{
+    display: block;
+}
+.name{
+    margin-right: 1%;
+    position: relative;
+    bottom: 22%;
+}
+.arrow{
+    margin-right: 2%;
+    position: relative;
+    bottom: 10%;
+}
+.avat{
+    margin-right: 5%;
+}
+.drop1{
+    width: 210px;
+    height: 162px;
+    position: absolute;
+    background-color:#FFFFFF;
+    z-index: 1;
+    border-radius: 10px;
+    top: 40px;
+    box-shadow: 2px 2px rgb(167, 167, 167);
+    display: none;
+}
+.d11{
+    left: -60px;
+}
+.d12{
+    left: -125px;
+}
+.d13{
+    right: 10px;
+    top: 70px;
+}
+.profile, .billing, .logout{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 4px 0 4px 0;
+}
+.profile{
+    margin-top: 13px;
+}
+.profile p, .billing p, .logout p{
+    padding: 9px 80px 11px 64px;
+}
+.smalldown{
+    padding: 0;
+    border: 0;
+    background-color: #FFFFFF;
+}
+.smalldown:hover .drop1{
+    display: inline-block;
+}
+.smalldown:hover .rotate{
+    transform: rotate(180deg);
+}
+.content{
+    width: 95.833%;
+    height:87.199%;
+    position: relative;
+    top: 2.4938%;
+    bottom: 4.4888%;
+    margin: 0 auto;
+}
+.titlebar{
+    width: 100%;
+    height: 7.4356%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titlebar h1{
+    font-size: 36px;
+    font-family: Source Sans Pro;
+    display: inline-block;
+    font-weight: 600;
+    padding-top: 4px;
+}
+.titlebar button{
+    background-color: #6763E3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 11%;
+    border-radius: 6px;  
+    color: #FFFFFF;
+    box-sizing: border-box;
+    font-family: Source Sans Pro, Regular;
+    font-size: 16px;
+}
+.titlebar button p{
+    margin-block-end: 0;
+    margin-block-start: 0;
+    display: inline-block;
+}
+.plus{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #514DDC;
+    padding-top: 5px;
+}
+.ourusers, .statistics, .sales, .referrer, .video{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    overflow-y: hidden;
+}
+.ourusers{
+    width: 31.85%;
+    height: 56.053%;
+    position: absolute;
+    top: 78px;
+    right: 0;
+}
+.ourusersup{
+    width: 100%;
+    text-align: center;
+}
+.ourusersup h3{
+    font-family: Source Sans Pro, Semibold;
+    font-size: 18px;
+    margin-bottom: 7px;
+    color: #4D4F5C;
+}
+.ourusersup p{
+    font-family: Source Sans Pro, Regular;
+    font-size: 14px;
+    color: #43425D;
+}
+.nick{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    position: relative;
+}
+.edit{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: #6763E3;
+    position: relative;
+    left: 70px;
+    bottom: 30px;
+    padding-top: 5px;
+}
+.avatarBig{
+    height: 96px;
+    width: 96px;
+}
+.number{
+    font-family: Source Sans Pro, Regular;
+    font-size: 14px;
+    opacity: 50%;
+    padding-top: 25px;
+    /* color: #43425D; */
+} 
+.james, .bavid, .lavid{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    /* margin:0 auto; */
+}
+
+.ourname h6, .james h6, .bavid h6, .lavid h6{
+    font-family: Source Sans Pro, Regular;
+    font-size: 14px;
+    opacity: 50%;
+    padding-top: 7px;
+    position: relative;
+    left: -25px;
+}
+.ourname h5{
+    font-family: Source Sans Pro, Semibold;
+    font-size: 16px;
+    position: relative;
+    left: -25px;
+    /* display: block; */
+}
+.statistics{
+    width: 31.84%;
+    height: 42.23%;
+    position: absolute;
+    top: 78px;
+    left: 0;
+}
+.graph, .donut{
+    /* width: 90%; */
+    margin: 20px;
+    height: 80%;
+}
+
+.sales{
+
+    width: 31.6%;
+    height: 42.23%;
+    position: absolute;
+    top: 78px;
+    left: 34.02%;
+}
+.referrer{
+
+    width: 65.65%;
+    height: 46.52%;
+    position: absolute;
+    top: 561px;
+    left: 0;
+}
+table {
+    font-family: Source Sans Pro, Regular;
+    border-collapse: collapse;
+    width: 96.02%;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  td, th {
+    border-bottom: 0.5px solid #F5F6FA;
+    text-align: left;
+    padding-left: 5%;
+    width: 19.2%;
+  }
+  tr, th{
+      height: 50px;
+  }
+  .r1{
+      background-color: #F5F6FA;
+  }
+  .referrer a{
+      font-size: 18px;
+      font-family: Source Sans Pro, Regular;
+      padding-left: 6.5%;
+  }
+.video{
+    width: 31.85%;
+    height: 32.697%;
+    position: absolute;
+    top: 706px;
+    right: 0;
+}
+.youtube{
+    width: 91.5%;
+    height: 72.3%;
+    margin-left: 4.27%;
+    margin-right: 4.27%;
+}
+@media (min-width: 600px) and (max-width: 1000px){
+    .statistics{
+        width: 32.5%;
+        top: 78px;
+        left: 0;
+    }
+    .sales{
+        width: 32.5%;
+        top: 78px;
+        left: 66%;
+    }
+    .referrer{
+        width: 50%;
+        top: 52%;
+    }
+    .ourusers{
+        width: 48%;
+        top: 52%;
+        left: 52%;
+        height: 46.5%;
+    }
+    .nick{
+        margin-top: 20px;
+    }
+    .video{
+        width: 30%;
+        top: 78px;
+        left: 34%
+    }
+}
+
+@media (max-width: 600px){
+    .vessel{
+        height: 2499px;
+        width: 100%;
+        display: flex;
+    }
+    .sidebar{
+        width: 0%;
+        background-color: black;
+        transition: 0.5s;
+        height: 100%;
+    }
+    .s0{
+        height: 5.819%;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 6.8%;
+    }
+    .s1, .s2, .s3, .s4, .s5 {
+        height: 4.603%;
+        width: 100%;
+        color: #FFFFFF;
+        box-sizing: border-box;
+        padding-left: 6.8%;
+        font-family: Source Sans Pro, Regular;
+        font-size: 16px;
+        display: flex;
+        margin-bottom: 6px;
+        align-items: center;
+    }
+    .s1 img, .s2 img, .s3 img, .s4 img, .s5 img {
+        height: 24px;
+        width: 24px;
+        box-sizing: border-box;
+    
+    }
+    .s1 p, .s2 p, .s3 p, .s4 p, .s5 p {
+        height: 20px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-top: 2px;
+    }
+    .s0, .s2{
+        background-color: #3C3B54;
+    }
+    .s3 button{
+        height: 16px;
+        width:38px;
+        font-family:Source Sans Pro, Regular;
+        font-size: 10px;
+        background-color: #FF4A33;
+        border-radius: 66px;
+        margin-left: 46.9%;
+    }
+    .s:hover {
+        background-color: #3C3B54;
+    }
+    .mainbar{
+        width: 100%;
+        height:100%;
+        transition: 0.5s;
+    }
+    .navbar{
+        width: 100%;
+        height: 2.801%;
+    }
+    .search, .line, .name, .arrow{
+        display: none;
+    }
+    .search1{
+        display: inline-block;
+    }
+    .drop2{
+        width: 335px;
+    }
+    .drop2name h5{
+        margin-left: 50px;
+    }
+    .drop2name h6, .kames h6, .marry h6, .maria h6{
+        margin-left: 50px;
+    }
+    .content{
+        width: 95.833%;
+        height:97.199%;
+        position: static;
+        margin: 0 auto;
+    }
+    .titlebar{
+        width: 100%;
+        height: 3.54%;
+    }
+    .titlebar h1{
+        font-size: 24px;
+        font-family: Source Sans Pro, Semibold;
+        display: inline-block;
+        font-weight: 600;
+        padding-top: 4px;
+    }
+    .titlebar button{
+        height: 70%;
+        width: 34%;
+        border-radius: 6px;  
+        color: #FFFFFF;
+        box-sizing: border-box;
+    }
+    .ourusers{
+        width: 100%;
+        height: 24.207%;
+        position: static;
+        margin-bottom: 25px;
+        overflow-x: hidden;
+    }
+    .statistics{
+        width: 100%;
+        height: 18.238%;
+        position: static;
+        margin-bottom: 25px;
+        overflow-x: hidden;
+    }
+    .sales{
+        width:100%;
+        height: 18.238%;
+        position: static;
+        margin-bottom: 25px;
+        overflow-x: hidden;
+    }
+    .referrer{
+        width: 100%;
+        height: 20.09%;
+        position: static;
+        margin-bottom: 25px;
+        overflow-x: hidden;
+    }
+    .video{
+        width: 100%;
+        height: 10.5804%;
+        position: static;
+        margin-bottom: 25px;
+    }
+    .youtube{
+        width: 91.5%;
+        height: 72.3%;
+        margin-left: 4.27%;
+        margin-right: 4.27%;
+        margin-bottom: 4%;
+    }
+}
